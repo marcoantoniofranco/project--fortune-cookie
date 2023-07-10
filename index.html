@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              dmsans: 'DM Sans',
+              montserrat: 'Montserrat',
+              dancing: 'Dancing Script',
+            },
+            colors: {
+              bluesky: '#C2E9FB',
+              darkbluesky: '#A1C4FD',
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="h-screen bg-gradient-to-tr from-indigo-900 to-purple-300 antialiased"
+  >
+    <main class="h-full grid place-content-center">
+      <div class="screenOne bg-white p-16 pt-12 rounded-md shadow-lg hidden">
+        <div class="w-[300px] text-center flex flex-col gap-4">
+          <h1 class="text-indigo-950 font-bold text-3xl font-montserrat">
+            Qual é a sua sorte de hoje?
+          </h1>
+          <p class="font-dmsans text-indigo-950">Abra o biscoito e descubra!</p>
+          <img src="assets/img/biscoito.svg" alt="" />
+        </div>
+      </div>
+      <div class="screenTwo bg-white p-16 pt-12 rounded-md shadow-lg">
+        <div class="w-[300px] text-center flex flex-col gap-4">
+          <h1 class="text-indigo-950 font-bold text-2xl font-montserrat">
+            Aqui está a sua sorte de hoje:
+          </h1>
+          <p class="font-dancing text-indigo-950 text-2xl bg-slate-300">
+            Se alguém está tão cansado que não possa te dar um sorriso,
+            deixa-lhe o teu.
+          </p>
+          <img src="assets/img/biscoito-quebrado.svg" alt="" />
+          <button
+            class="text-white bg-orange-500 p-4 w-44 font-dmsans text-[15px] rounded-md text-center mx-auto shadow-lg"
+          >
+            Abrir outro biscoito
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
