@@ -34,8 +34,10 @@ function toggleScreen() {
 function keypressEnter(event) {
   if (event.key === 'Enter' && screenTwo.classList.contains('hidden')) {
     toggleScreen();
+    pickFortune();
   } else if (event.key === 'Enter' && screenOne.classList.contains('hidden')) {
     toggleScreen();
+    pickFortune();
   }
 }
 
